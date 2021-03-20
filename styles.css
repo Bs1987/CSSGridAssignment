@@ -1,1 +1,135 @@
-/*Maak hier jouw CSS!*/
+body {
+    background-color: #FFEFDB;
+    color: #243E36;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px auto 50px 50px 50px 50px 50px;
+    grid-template-areas:
+                        "itemA"
+                        "itemtext"
+                        "itemC"
+                        "itemD"
+                        "itemE"
+                        "....."
+                        "itemF";
+    column-gap: 16px;
+    row-gap: 16px;
+}
+
+.grid-itemA {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemA;
+
+}
+
+.grid-itemtext {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemtext;
+}
+
+.grid-itemC {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemC;
+}
+
+.grid-itemD {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemD;
+}
+
+.grid-itemE {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemE;
+}
+
+.grid-itemF {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #BA3B44;
+    grid-area: itemF;
+}
+
+
+@media only screen and (min-width: 992px) {
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 190px 100px auto 50px;
+        grid-template-areas:
+                        "itemA     itemC itemC"
+                        "itemtext itemC itemC"
+                        "itemtext itemE  itemD"
+                        "itemtext itemE  ...."
+                        "itemF   itemF itemF";
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+
+    .grid-itemA {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemA;
+
+    }
+
+    .grid-itemtext {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemtext;
+    }
+
+    .grid-itemC {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemC;
+    }
+
+    .grid-itemD {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemD;
+    }
+
+    .grid-itemE {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemE;
+    }
+
+    .grid-itemF {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #BA3B44;
+        grid-area: itemF;
+    }
+}
